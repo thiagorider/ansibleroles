@@ -1,0 +1,9 @@
+---
+# Windows tasks file for hello-world-role
+- name: Print a Hello World
+  command: echo "{{ Message }}!!!"
+  register: result
+
+- name: print message
+  debug:
+    msg: "{{ result.stdout_lines }}"

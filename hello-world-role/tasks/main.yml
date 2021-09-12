@@ -1,0 +1,9 @@
+---
+# tasks file for hello-world-role
+- name: Says Hello for Linux
+  import_tasks: linux.yml
+  when: ansible_facts['system']|lower == 'linux'
+
+- name: Says Hello for Windows
+  import_tasks: windows.yml
+  when: ansible_facts['system']|lower == 'windows'
