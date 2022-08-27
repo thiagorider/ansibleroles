@@ -4,9 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-ansible = "===4.5.0"
+ansible = "5.6.0"
+kubernetes = "23.3.0"
+openshift = "0.13.1"
+kubernetes-validate = "1.23.3"
+docker = "6.0.0"
+jmespath = "*"
 
 [dev-packages]
+ansible-lint = "*"
 
 [requires]
 python_version = "3.8"
